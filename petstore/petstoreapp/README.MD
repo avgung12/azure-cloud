@@ -1,1 +1,1 @@
-Test edit. 
+Sample text to deploy image. 
