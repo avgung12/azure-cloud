@@ -1,1 +1,1 @@
-Sample text to deploy image. 
+Sample text to deploy image docker. 
