@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: avgungazurecloud 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: avgungazurecloud
+  template:
+    metadata:
+      labels:
+        app: avgungazurecloud 
+    spec:
+      containers:
+        - name: avgungazurecloud 
+          image: justinazurepetstorecr.azurecr.io/avgungazurecloud
+          ports:
+          - containerPort: 8080
