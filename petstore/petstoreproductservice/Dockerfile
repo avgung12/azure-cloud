@@ -1,7 +1,7 @@
 #
 # Build stage
 #
-FROM maven:3.6.0-jdk-8-slim AS build
+FROM eclipse-temurin:17-jre-alpine AS build
 WORKDIR /build
 COPY pom.xml .
 COPY src ./src
@@ -10,7 +10,7 @@ RUN mvn clean package
 #
 # Package stage
 #
-FROM openjdk:8-jre-alpine
+FROM eclipse-temurin:17-jre-alpine
 
 WORKDIR /app
 
