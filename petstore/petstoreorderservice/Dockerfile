@@ -8,7 +8,7 @@ COPY src ./src
 RUN mvn clean package -DskipTests
 
 #
-# Package stage
+# Package stage(s)
 #
 FROM eclipse-temurin:8-jre
 
